@@ -130,3 +130,19 @@ export default class Snowflake {
     return hexToDec(id);
   }
 }
+
+// Ususage
+
+// var SnowflakeId = require('snowflake-id');
+
+// // Initialize snowflake
+// var snowflake = new SnowflakeId({
+//     mid : 42,
+//     offset : (2019-1970)*31536000*1000
+// });
+
+//mid : (Default to 1) A machine id or any random number. If you are generating the id in a distributed system, its highly advised to provide a proper mid which is unique to the different machines.
+
+//offset : (Defaults to 0) This is a time offset which will be subtracted from current time to get the first 42 bits of the id. This will help in generating smaller ids.
+
+
